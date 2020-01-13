@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    <bean id="bmw" class="tema2.ex2.Autoturism">
+        <property name="price" value="60000"/>
+        <property name="viteza_max" value="300"/>
+        <property name="marca" value="BMW"/>
+        <property name="anul" value="2018"/>
+    </bean>
+
+    <bean id="audi" class="tema2.ex2.Autoturism">
+        <property name="price" value="40000"/>
+        <property name="viteza_max" value="250"/>
+        <property name="marca" value="AUDI"/>
+        <property name="anul" value="2019"/>
+    </bean>
+
+    <bean id="tir1" class="tema2.ex2.Tir">
+        <property name="price" value="100000"/>
+        <property name="viteza_max" value="150"/>
+        <property name="incarcatura_max" value="3000"/>
+    </bean>
+
+    <bean id="tir2" class="tema2.ex2.Tir">
+        <property name="price" value="200000"/>
+        <property name="viteza_max" value="200"/>
+        <property name="incarcatura_max" value="4000"/>
+    </bean>
+
+    <bean id="yamaha" class="tema2.ex2.Motocicleta">
+        <constructor-arg value="1200"/>
+        <constructor-arg value="270"/>
+        <constructor-arg value="Yamaha"/>
+    </bean>
+</beans>
